@@ -12,7 +12,7 @@ class TestPost(unittest.TestCase):
       self.new_post = Post(post_title="Sample Title",
                             post_content="Hey Yooh!!.",
                             user_id=self.user_Larvine.id)
-      self.new_comment = Comment(comment="Awesome",
+      self.new_comment = Comment(comment="Awesome!!!",
                                 post_id=self.new_post.id,
                                 user_id=self.user_Larvine.id)
 
