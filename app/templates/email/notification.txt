@@ -1,0 +1,3 @@
+Hey a new blog's been made.
+
+{{user_fname}} {{user_lname}}.
