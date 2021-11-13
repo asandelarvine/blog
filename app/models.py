@@ -38,13 +38,13 @@ class User(UserMixin, db.Model):
     def verify_password(self, password):
         return check_password_hash(self.password_hash, password)
 
-    # User like logic
+    # Check if User like logic
     def like_post(self, post):
         if not self.has_liked_post(post):
             like = PostLike(user_id = self.id, post_id = post.id)
             db.session.add(like)
 
-    # User dislike logic
+    # Check if User dislike logic
     def unlike_post(self, post):
         if self.has_liked_post(post):
             PostLike.query.filter_by(
