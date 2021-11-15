@@ -15,4 +15,4 @@ def notfound(error):
       db.session.commit()
       welcome_message("Thank you for subscribing", 
                       "email/welcome", new_sub.email)
-  return render_template("notfound.html"),404
+  return render_template("notfound_page.html"),404

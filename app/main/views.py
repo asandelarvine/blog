@@ -84,7 +84,7 @@ def edit_post(id):
       db.session.commit()
       return redirect(url_for("main.post", id = post.id))
 
-  return render_template("edit_post.html", 
+  return render_template("post_edit.html", 
                           post = post,
                           edit_form = edit_form)
 
@@ -158,6 +158,6 @@ def update_profile(id):
       db.session.commit()
       return redirect(url_for("main.profile", id = id))
     
-  return render_template("profile/update.html",
+  return render_template("profile/profile_update.html",
                           user = user,
                           form = form)

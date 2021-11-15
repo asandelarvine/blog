@@ -7,6 +7,7 @@ from flask_bootstrap import Bootstrap
 from flask_admin import Admin
 from config import config_options
 
+
 db = SQLAlchemy()
 login_manager = LoginManager()
 login_manager.session_protection = "strong"
