@@ -1,7 +1,7 @@
 import os 
 
 class Config:
-  SECRET_KEY = os.environ.get("SECRET_KEY")
+  SECRET_KEY = "1234"
   SQLALCHEMY_DATABASE_URI = "postgresql+psycopg2://access:yooh@localhost/blog"
   UPLOADED_PHOTOS_DEST = "app/static/photos"
 
@@ -9,8 +9,8 @@ class Config:
   MAIL_SERVER = "smtp.gmail.com"
   MAIL_PORT = 587
   MAIL_USE_TLS = True
-  MAIL_USERNAME = os.environ.get("MAIL_USERNAME")
-  MAIL_PASSWORD = os.environ.get("MAIL_PASSWORD")
+  MAIL_USERNAME = "monkeymee20you@gmail.com"
+  MAIL_PASSWORD = "@monkey2000"
 
 class ProdConfig(Config):
     
